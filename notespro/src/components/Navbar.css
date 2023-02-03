@@ -1,0 +1,87 @@
+.bar{
+    position: absolute;
+    width: 230px;
+    height: 870px;
+    left: 30px;
+    top: 34px;
+    border-radius: 17px;
+    border-color: rgba(172, 202, 229, 0.66);
+    border: 0.2px;
+    box-shadow: 2px 2px 2px 2.5px rgba(123, 129, 135, 0.57);
+    background-color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+.navhead{
+    display: flex;
+    flex-direction: row;
+    width: 130px;
+    height: 33px;
+    padding-left: 20px;
+    margin-top: 20px;
+   
+    font-weight: bold;
+    font-size: 30px;
+}
+.signup-img{
+width: 80%;
+height: 80%;
+margin-top: 50px;
+border-radius: 100%;
+margin-left: 30px;
+}
+.txt{
+    font-weight: 500;
+font-size: 30px;
+padding-left: 14px;
+}
+
+.comp{
+    display:flex;
+    flex-direction: row;height: 35px;
+   margin-left: 50px;
+    padding-bottom: 15px;
+font-size: 20px;
+align-items: center;
+}
+
+.icon{
+    padding-bottom: 10px;
+    padding-right: 7px;
+}
+.navbar{
+    margin-top: 180px;
+    display:flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+span{
+    padding-left: 15px;
+    
+}
+.comp h3{
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 0px;
+    padding: 0px;
+    line-height: 0px;
+}
+.signup-btn{
+  margin-top: 40px;
+  width:175px;
+  display:flex;
+  flex-direction: row;
+  border-radius: 13px;
+    background-color: white;
+    justify-content: center;
+    margin-left: 30px;
+}
+.texts{
+    text-align: center;
+    font-size: 25px;
+}
+.comp-container{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

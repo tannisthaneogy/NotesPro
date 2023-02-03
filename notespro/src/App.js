@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import React from 'react';
+import Navbar from './components/navbar'
+import TopElement from './components/TopElement';
+import Registration from './components/Registration';
+import {  Route, Routes,Navigate } from "react-router-dom";
+import AddNoteBtn from './components/AddNoteBtn';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import TestUpload from "./components/TestUpload"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> Hi i am nilu.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Navbar/>
+      <TopElement/>
+      <Routes>
+        <Route path="/register"  element={<Registration/>} />
+        
+      </Routes>
     </div>
   );
 }
