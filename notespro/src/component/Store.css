@@ -1,0 +1,23 @@
+.store-pic{
+    width: 485px;
+    height: 440px;
+    margin-top: 70px;
+}
+
+.store-btn-container{
+    width: 1507px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.store-green-btn{
+    font-size: 22px;
+    background-color: #AEE86D;
+    border-radius: 28px;
+    width: 200px;
+    height: 50px;
+    margin-left: 45px;
+    margin-top: 25px;
+}

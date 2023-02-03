@@ -49,7 +49,7 @@ select,option::placeholder{
 }
 .reg-image{
     
-    margin-left: 160px;
+    margin-left: 210px;
     height:755px;
     width:868px;
     border-radius: 17px;
@@ -67,4 +67,16 @@ background: #AEE86D;
 border: 1px solid #000000;
 border-radius: 6px;
 margin-top: 40px; margin-left: 120px;
+}
+.registration-white-box{
+    display: flex;
+    flex-direction: row;
+    width: 1600px;
+  height: 755px;
+  position: absolute;
+  left: 305px;
+  top: 150px;
+  border-radius: 17px;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2.5px rgba(123, 129, 135, 0.57);
 }

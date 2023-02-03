@@ -1,0 +1,107 @@
+.main-box{
+    background-color: #E8E8E8;
+    width: 1507px;
+    height: 270px;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+.main-box-container{
+    width: 1600px;
+    height: 675px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+
+.subject-container{
+    width: 1507px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.second-container{
+    width: 1507px;
+    height: 190px;
+    
+    display: flex;
+}
+
+.purple-btn{
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 28px;
+    background-color: #A3A7F5;
+    margin-left: 25px;
+}
+
+.notes-container{
+    height: 190px;
+    width: 1400px;
+    display: flex;
+    align-items: center;
+}
+
+.addbtn-container{
+    width: 107px;
+    height: 190px;
+    display: flex;
+    justify-content: center ;
+}
+
+.plus-btn{
+    width: 55px;
+    height: 60px;
+    margin-top: 115px;
+}
+
+.green-btn-container{
+    width: 1600px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.green-btn{
+    font-size: 22px;
+    background-color: #AEE86D;
+    border-radius: 28px;
+    width: 200px;
+    height: 50px;
+    margin-left: 45px;
+    margin-top: 15px;position: sticky;
+}
+
+.first{
+    width: 1507px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    margin-left: 50px;
+}
+.design{
+    width: 1600px;
+    height: 755px;
+    display: flex;
+    flex-direction: column;
+}
+.workspace-div{
+    width: 1600px;
+  height: 755px;
+  position: absolute;
+  left: 305px;
+  top: 150px;
+  border-radius: 17px;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2.5px rgba(123, 129, 135, 0.57);
+  display: flex;
+  flex-direction: column;
+  
+}

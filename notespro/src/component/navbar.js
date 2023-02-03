@@ -10,7 +10,7 @@ import {
   onAuthStateChanged,
   signInWithPopup,
 } from "firebase/auth";
-function Navbar() {
+function Navbar2() {
   
     const [value,setValue]=useState('');
     const [user, setUser] = React.useState("");
@@ -96,4 +96,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Navbar2

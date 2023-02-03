@@ -11,7 +11,7 @@ function Registration({user}){
         qualification: "",
         email:"",
     });
-    const [response, setResponse] = useState();
+    const [response, setResponse] = useState({});
     let submit= async (e) => {
         /*const config = {
             headers: {
@@ -45,7 +45,7 @@ function Registration({user}){
     }
 
     return(
-        <div className="white-box">
+        <div className="registration-white-box">
            <div className="signup-content">
            <form onSubmit={(e)=>{submit(e)}}>
            <div className="signup-form">  
