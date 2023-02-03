@@ -1,0 +1,18 @@
+.hero-pic{
+    width:500px;
+    height:450px;
+}
+.text{
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 21px;
+    text-align: justify;
+}
+
+.elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}

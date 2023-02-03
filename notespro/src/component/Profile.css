@@ -1,0 +1,92 @@
+.profile-container{
+    width: 1507px;
+    height: 755px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-form-container{
+    width: 753px;
+    height: 755px;
+}
+
+.second-form-container{
+    width: 450px;
+    height: 600px;
+    margin-left: 120px;
+    margin-top: 60px;
+}
+
+.profile-img-container{
+    width: 753px;
+    height: 755px;
+    background-image: url("../images/profilepic.jpg");
+    background-size: cover;
+}
+
+.profile-container{
+    width: 1507px;
+    height: 755px;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-btn-container{
+    width: 450px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile-green-btn{
+    font-size: 22px;
+    background-color: #AEE86D;
+    border-radius: 28px;
+    width: 200px;
+    height: 50px;
+    margin-left: 18px;
+    margin-top: 25px;
+}
+
+.line{
+    width: 450px;
+    height: 1px;
+    background-color: black;
+    margin-bottom: 70px;
+}
+
+h1{
+    font-size: 33px;
+}
+
+.profile-form-container input[type=text]{
+    width: 450px;
+    height: 50px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #A3A7F5;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.profile-form-container input[type=email]{
+    width: 450px;
+    height: 45px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #A3A7F5;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input::placeholder{
+    font-size: 22px;
+}
+
+label{
+    font-size: 25px;
+}
