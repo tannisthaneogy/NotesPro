@@ -38,7 +38,7 @@ uploadTask.on('state_changed',
       <div className="note-box-yay">
       <form onSubmit={formHandler}>
         <label className="upload-label" htmlFor="file"><input type="file"/></label>
-        <button className="submit-btn-upload" type='submit'><img width="30px" src={submitbtn}/></button>
+        <button className="submit-btn-upload" type='submit'><img width="25px" src={submitbtn}/></button>
         </form>
       </div>
   )
