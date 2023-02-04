@@ -8,12 +8,20 @@ import TopElement from './component/TopElement'
 import AddNoteBtn from './component/AddNoteBtn'
 import Notes from './component/Notes';
 import BuyNotes from './component/buyNotes';
+import Landing from './component/landing'
+import Profile from './component/profile'
+import {  Route, Routes,Navigate } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-    <BuyNotes/>
+    <TopElement/>
       
       
+      <Routes>
+        <Route path="/register"  element={<Registration/>} />
+        <Route path="/workspace"  element={<AddNoteBtn/>} />
+        <Route path="/profile"  element={<Profile/>} />
+      </Routes>
     </div>
   );
 }
