@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import "./SubjectBox.css"
-import NotesBox from "./NotesBox"
+import Notes from "./Notes"
 import Modal from 'react-bootstrap/Modal';
 import './subject.css'
 import './navbar.css'
@@ -51,7 +51,7 @@ function NoteBox() {
                 </div>
                 <div className="addbtn-container">
                     
-                    <img onClick={()=>setArr([...arr,<NotesBox/>])} src={Purplebtn} className="plus-btn"></img>
+                    <img onClick={()=>setArr([...arr,<Notes/>])} src={Purplebtn} className="plus-btn"></img>
                 </div>
             </div>
         </div>
