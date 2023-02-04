@@ -5,36 +5,6 @@ import cloud from "../images/upload.png"
 import crossbtn from "../images/crossbtn.png"
 
 function TestUpload() {
-   /*const wrapper = document.querySelector(".wrapper");
-         const fileName = document.querySelector(".file-name");
-         const defaultBtn = document.querySelector("#default-btn");
-         const customBtn = document.querySelector("#custom-btn");
-         const cancelBtn = document.querySelector("#cancel-btn i");
-         const img = document.querySelector("img");
-         let regExp = /[0-9a-zA-Z\^\&\'\@\{\}\[\]\,\$\=\!\-\#\(\)\.\%\+\~\_ ]+$/;
-         function defaultBtnActive(){
-           defaultBtn.click();
-         }
-         defaultBtn.addEventListener("change", function(){
-           const file = this.files[0];
-           if(file){
-             const reader = new FileReader();
-             reader.onload = function(){
-               const result = reader.result;
-               img.src = result;
-               wrapper.classList.add("active");
-             }
-             cancelBtn.addEventListener("click", function(){
-               img.src = "";
-               wrapper.classList.remove("active");
-             })
-             reader.readAsDataURL(file);
-           }
-           if(this.value){
-             let valueStore = this.value.match(regExp);
-             fileName.textContent = valueStore;
-           }
-         });*/
   
   return (
    <div className="upload-container">
@@ -60,6 +30,15 @@ function TestUpload() {
          </div>
          <button onclick="defaultBtnActive()" id="custom-btn">Choose a file</button>
          <input id="default-btn" type="file" hidden/>
+      </div>
+      <div className="upload-file-form-container">
+         <label htmlFor="title"></label><br />
+         <input type="text" name="title" id="title" placeholder='Title'/><br />
+         <label htmlFor="desc"></label><br />
+         <input type="text" name="desc" id="desc" placeholder='Description'/><br />
+         <label htmlFor="tags"></label><br />
+         <input type="text" name="tags" id="tags" placeholder='Tags'/><br />
+         <button type="submit" className='upload-submit-btn'>SUBMIT</button>
       </div>
       </div>
   )
