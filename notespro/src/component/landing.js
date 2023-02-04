@@ -10,8 +10,11 @@ function Landing() {
     <div className="white-box">
     <div className='elements'>
     <img src={hero} className="hero-pic" alt="hero-pic" />
-    <div className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel elit eu nulla placerat luctus ac at nisl. Mauris rutrum libero convallis consectetur scelerisque. Phasellus vel sodales ipsum. Praesent dolor nulla, facilisis vitae faucibus vitae, 
-    blandit sit amet sapien. Donec vitae pellentesque velit, eu aliquam mi. Pellentesque interdum ligula sed dolor molestie, eleifend venenatis purus finibus. Vivamus mattis dolor nec augue ullamcorper, quis cursus nunc molestie.</div>
+    <div className='text'>Worried that your notes aren't good enough? We have got you covered. 
+    Notespro is a platform that you can use to buy and sell study notes and have quick access in your very own workspace. 
+    NotesPro is your closest buddy when you need those last minute notes before an exams. 
+    Share notes with each other and be on the same page. 
+    The best part? All these notes are stored on the cloud, going easy peasy on your local storage.</div>
    
     </div>
     
