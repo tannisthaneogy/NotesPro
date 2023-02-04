@@ -32,24 +32,6 @@
     flex-direction: row;
 }
 
-.profile-btn-container{
-    width: 450px;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.profile-green-btn{
-    font-size: 22px;
-    background-color: #AEE86D;
-    border-radius: 28px;
-    width: 200px;
-    height: 50px;
-    margin-left: 18px;
-    margin-top: 25px;
-}
-
 .line{
     width: 450px;
     height: 1px;
@@ -61,32 +43,31 @@ h1{
     font-size: 33px;
 }
 
-.profile-form-container input[type=text]{
-    width: 450px;
-    height: 50px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 3px solid #A3A7F5;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.profile-form-container input[type=email]{
+.user-name{
     width: 450px;
     height: 45px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 3px solid #A3A7F5;
-    border-radius: 4px;
-    box-sizing: border-box;
+    margin-bottom: 34px;
+    border-bottom: 2px solid #A3A7F5;
+    font-size: 24px;
 }
-
-input::placeholder{
-    font-size: 22px;
+.user-phone{
+    width: 450px;
+    height: 45px;
+    margin-bottom: 34px;
+    border-bottom: 2px solid #A3A7F5;
+    font-size: 24px;
 }
-
-label{
-    font-size: 25px;
+.user-mail{
+    width: 450px;
+    height: 45px;
+    margin-bottom: 34px;
+    border-bottom: 2px solid #A3A7F5;
+    font-size: 24px;
+}
+.user-cur-course{
+    width: 450px;
+    height: 45px;
+    margin-bottom: 34px;
+    border-bottom: 2px solid #A3A7F5;
+    font-size: 24px;
 }

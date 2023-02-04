@@ -15,7 +15,8 @@ function App() {
   return (
     <div className="App">
     <TopElement/>
-      
+      <Navbar/>
+      <Profile/>
       
       <Routes>
         <Route path="/register"  element={<Registration/>} />
