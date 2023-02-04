@@ -1,8 +1,5 @@
 import React from 'react'
 import "./TestUpload.css"
-import profile from "../images/profile.jpg"
-import cloud from "../images/upload.png"
-import crossbtn from "../images/crossbtn.png"
 
 function TestUpload() {
   

@@ -45,11 +45,24 @@ border-left: 2.5px solid #8a90ff;
 .searchbar-container{
   width: 35%;
   position: absolute;
-  left: 86%;
+  left: 50%;
   top: 8%;
   transform: translate(-50% , -50%);
 }
 
 .fa-search{
   color: #737af5;
+}
+
+.search-pic{
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+
+.searchbar-below-text{
+  position: absolute;
+  left: 43%;
+  top: 13.5%;
+  font-size: 18px;
 }

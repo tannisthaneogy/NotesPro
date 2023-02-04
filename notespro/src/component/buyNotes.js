@@ -1,5 +1,6 @@
 import React from 'react'
 import './buyNotes.css'
+import searchpic from "../images/searchpic.jpg"
 function BuyNotes() {
   return (
     <div>
@@ -13,6 +14,8 @@ function BuyNotes() {
        </button>
     </div>
  </div>
+ <p className="searchbar-below-text">Search "tags"</p>
+ <img src={searchpic} width="800px" className='search-pic' />
     </div>
     </div>
   )
