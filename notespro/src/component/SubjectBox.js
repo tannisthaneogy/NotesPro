@@ -1,11 +1,12 @@
 import React,{useState} from 'react'
 import "./SubjectBox.css"
-import Notes from "./Notes"
+import NotesBox from "./NotesBox"
 import Modal from 'react-bootstrap/Modal';
 import './subject.css'
 import './navbar.css'
 import Form from 'react-bootstrap/Form';
 import Purplebtn from '../images/Purple btn.png'
+import 'bootstrap/dist/css/bootstrap.min.css';
 function NoteBox() {
     const[arr,setArr]=useState([]);
     const [show, setShow] = useState(false);
@@ -29,7 +30,7 @@ function NoteBox() {
       <Form>
       <Form.Group className="mb-3" controlId="formBasicSubject">
         <Form.Label className=''>Enter here</Form.Label>
-        <Form.Control type="text" placeholder="Enter here" />
+        <Form.Control type="text" placeholder="" />
       </Form.Group>
       
       </Form>
@@ -50,7 +51,7 @@ function NoteBox() {
                 </div>
                 <div className="addbtn-container">
                     
-                    <img onClick={()=>setArr([...arr,<Notes/>])} src={Purplebtn} className="plus-btn"></img>
+                    <img onClick={()=>setArr([...arr,<NotesBox/>])} src={Purplebtn} className="plus-btn"></img>
                 </div>
             </div>
         </div>

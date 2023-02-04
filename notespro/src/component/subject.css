@@ -1,0 +1,31 @@
+.peww{
+    border-radius: 7px;
+    height: 200px;
+    width: 300px;
+    border-color: black;
+    border-width: 1px solid;
+    box-shadow: 1px 1px 1px 1.5px ;
+    margin:40px;
+}
+.modal-btn{
+    width: 160px;
+    height: 40px;
+    background: #A3A7F5;
+border: 1px solid #000000;
+border-radius: 25px;
+}
+.modal-submit{
+    width: 160px;
+    height: 40px;
+    background: #A3A7F5;
+border: 1px solid #000000;
+border-radius: 10px;
+}
+.demo-cont{
+    display:flex;
+    flex-direction: column;
+}
+.msg{
+    display:flex;
+    flex-direction: column;
+}
