@@ -1,0 +1,102 @@
+
+.container1{
+  height: 350px;
+  width: 430px;
+  position: relative;
+}
+.container1 .wrapper1{
+  position: relative;
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  background: #fff;
+  border: 2px dashed #c2cdda;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.wrapper1.active{
+  border: none;
+}
+.wrapper1 .image1{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper1 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.wrapper1 .icon1{
+  font-size: 100px;
+  color: #9658fe;
+}
+.wrapper1 .text{
+  font-size: 20px;
+  font-weight: 500;
+  color: #5B5B7B;
+}
+.wrapper1 #cancel-btn i{
+  position: absolute;
+  font-size: 20px;
+  right: 15px;
+  top: 15px;
+  color: #9658fe;
+  cursor: pointer;
+  display: none;
+}
+.wrapper1.active:hover #cancel-btn i{
+  display: block;
+}
+.wrapper1 #cancel-btn i:hover{
+  color: #e74c3c;
+}
+.wrapper1 .file-name1{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 18px;
+  color: #fff;
+  display: none;
+  background: linear-gradient(135deg,#3a8ffe 0%,#9658fe 100%);
+}
+.wrapper1.active:hover .file-name1{
+  display: block;
+}
+.container1 #custom-btn{
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: linear-gradient(135deg,#3a8ffe 0%,#9658fe 100%);
+}
+
+.upload-container{
+  width: 1600px;
+  height: 755px;
+  position: absolute;
+  left: 305px;
+  top: 150px;
+  border-radius: 17px;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2.5px rgba(123, 129, 135, 0.57);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
