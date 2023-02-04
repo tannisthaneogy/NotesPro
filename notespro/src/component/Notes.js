@@ -10,9 +10,7 @@ function Notes() {
  const file=e.target[0].files[0];
  console.log(file);
 }
- 
  const uploadFile=(file)=>{
-  
 if(!file)
 return;
 const storageRef=ref(storage,`files/${file.name}`);
