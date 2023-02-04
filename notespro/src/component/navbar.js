@@ -14,34 +14,46 @@ function Navbar2() {
   
     const [value,setValue]=useState('');
     const [user, setUser] = React.useState("");
+    
     const [cookies, setCookie] = useCookies("");
-    var imageURL ="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg";
+    //var imageURL ="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg";
     const navigate = useNavigate();
     const handleClick=()=>{
       signInWithPopup(auth,provider)
       .then(async (result) => {
-        imageURL=result.photoURL;
-        console.log(result.user); 
+        //imageURL=result.user.photoURL;
+        //console.log(result.user.photoURL); 
+        //console.log(result.user);
       setValue(result.user.email)
-        localStorage.setItem('email',result.user.email)
         var token=result.user.accessToken;
-        //console.log(token);
+        console.log(token)
         setCookie('accessToken',token);
-        
+        // try{
+        //   const {data}=await axios.post('')
+        //   {result.user};
+        //   if(data.isPresent)
+        //   navigate('/workspace')
+        //   else
+        // navigate('/register')
+        // }
+        // catch (err) {
+        //   console.log(err);
+        // }
       })
       .catch((error) => {
         console.log(error);
       });
     }
-    useEffect(()=>{
+
+    /*useEffect(()=>{
       setValue(localStorage.getItem('email'))
-    });
-   /* useEffect(() => {
+    });*/
+   useEffect(() => {
       onAuthStateChanged(auth, (user) => {
         if (user) setUser(user);
         else setUser(null);
       });
-    }, []);*/
+    }, [user]);
   return (
     <div>
    
@@ -54,7 +66,11 @@ function Navbar2() {
       </div>
       <span>Notespro</span></div>
 <div className=''>
-<img className="signup-img" src={imageURL} alt="user"></img>
+{user?(<img className="signup-img" src={user.photoURL} alt="user"></img>):<img className="signup-img" src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg" alt="user"></img>}
+{user?
+  (<div className='userDetails'>
+  <h3>Hello,</h3>
+<h4>{user.displayName}</h4></div>):(
 <button className='signup-btn'onClick={handleClick}>
      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15.1745 7.9077C16.8484 7.87962 18.466 8.51257 19.6762 9.66929L23.0534 6.29212C20.9221 4.29005 18.0985 3.19074 15.1745 3.22464C12.9912 3.22373 10.8507 3.83007 8.99229 4.97588C7.13384 6.12168 5.63069 7.76179 4.65088 9.71286L8.58503 12.7627C9.03748 11.3658 9.91664 10.1461 11.0987 9.27512C12.2808 8.40418 13.7063 7.92593 15.1745 7.9077Z" fill="#EA4335"/>
@@ -62,7 +78,7 @@ function Navbar2() {
 <path d="M19.1615 20.9678C18.2511 21.5522 17.2192 21.9209 16.1446 22.0459C15.0701 22.1709 13.9811 22.0488 12.9609 21.689C11.9407 21.3291 11.0161 20.741 10.2577 19.9696C9.49932 19.1981 8.92715 18.2636 8.58483 17.2373L4.65186 20.2872C5.63149 22.2379 7.13427 23.8777 8.99226 25.0235C10.8503 26.1693 12.9903 26.7758 15.1731 26.7754C18.0396 26.853 20.8274 25.8323 22.9661 23.9222L19.1603 20.9678H19.1615Z" fill="#34A853"/>
 <path d="M26.2648 12.8593H15.1748V17.414H21.5123C21.3811 18.1344 21.1052 18.8208 20.7012 19.4317C20.2972 20.0425 19.7736 20.5651 19.1619 20.9678L19.1502 20.9748L19.1619 20.9678L22.9677 23.9234C24.1267 22.8072 25.0381 21.46 25.643 19.969C26.2479 18.4781 26.5328 16.8766 26.4792 15.2685C26.4792 14.4595 26.4085 13.6541 26.2648 12.8593Z" fill="#4285F4"/>
 </svg>
-     <div className='texts'>Signup</div></button> 
+     <div className='texts'>Signup</div></button>)} 
 </div>
       
 <div className='navbar'>

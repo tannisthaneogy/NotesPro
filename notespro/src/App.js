@@ -16,9 +16,10 @@ function App() {
     <div className="App">
     <TopElement/>
       <Navbar/>
-      <Profile/>
+      
       
       <Routes>
+      <Route path="/"  element={<Landing/>} />
         <Route path="/register"  element={<Registration/>} />
         <Route path="/workspace"  element={<AddNoteBtn/>} />
         <Route path="/profile"  element={<Profile/>} />
