@@ -1,6 +1,7 @@
 import React,{ useState , useEffect} from 'react'
 import './navbar.css'
-import {auth,provider} from './config'
+import { signOut } from "firebase/auth";
+import {auth,provider,} from './config'
 import axios from "axios";
 import signimg from '../images/signup_img.png'
 import { Link as Rlink, useNavigate } from "react-router-dom";
@@ -44,6 +45,11 @@ function Navbar2() {
         console.log(error);
       });
     }
+   const handleOut=()=> signOut(auth).then(() => {
+      // Sign-out successful.
+    }).catch((error) => {
+      // An error happened.
+    });
 
     /*useEffect(()=>{
       setValue(localStorage.getItem('email'))
@@ -106,6 +112,7 @@ function Navbar2() {
 <h3>Profile</h3>
 </div>
 </div>
+ <button onClick={handleOut}>Logout</button>
       </div>
       </div>
       </div>
