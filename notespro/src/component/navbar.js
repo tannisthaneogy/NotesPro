@@ -29,17 +29,26 @@ function Navbar2() {
         var token=result.user.accessToken;
         console.log(token)
         setCookie('accessToken',token);
-        // try{
-        //   const {data}=await axios.post('')
-        //   {result.user};
-        //   if(data.isPresent)
-        //   navigate('/workspace')
-        //   else
-        // navigate('/register')
-        // }
-        // catch (err) {
-        //   console.log(err);
-        // }
+        try{
+          const {data}=await axios.post('https://8e5e-2409-4041-d90-7535-a473-c6a6-dc83-2737.in.ngrok.io/userprofile',
+            {gmail:result.user.email},{
+              
+            headers: {
+                "Content-Type": "application/json",
+                // "token":`${user.accessToken}`
+                'Authorization' : result.user.accessToken,
+              },
+      
+          })
+          ;
+          if(data)
+          navigate('/workspace')
+          else
+        navigate('/register')
+        }
+        catch (err) {
+          console.log(err);
+        }
       })
       .catch((error) => {
         console.log(error);
