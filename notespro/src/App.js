@@ -9,6 +9,7 @@ import AddNoteBtn from './component/AddNoteBtn'
 import Notes from './component/Notes';
 import BuyNotes from './component/buyNotes';
 import Landing from './component/landing'
+import Store from './component/Store'
 import Profile from './component/profile'
 import {  Route, Routes,Navigate } from "react-router-dom";
 function App() {
@@ -23,6 +24,9 @@ function App() {
         <Route path="/register"  element={<Registration/>} />
         <Route path="/workspace"  element={<AddNoteBtn/>} />
         <Route path="/profile"  element={<Profile/>} />
+        <Route path="/store"  element={<Store/>} />
+        <Route path="/buynotes"  element={<BuyNotes/>} />
+        <Route path="/sellnotes"  element={<TestUpload/>} />
       </Routes>
     </div>
   );
