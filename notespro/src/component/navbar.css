@@ -94,4 +94,12 @@ margin-left: 68px;
 }
 .userDetails h4{
     margin-left: 15px;
-    }
+}
+
+.logout-btn{
+    margin-top: 110px;
+    width: 150px;
+    height: 45px;
+    border-radius: 25px;
+    background-color: #AEE86D;
+}

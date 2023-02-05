@@ -112,7 +112,7 @@ function Navbar2() {
 <h3>Profile</h3>
 </div>
 </div>
- <button onClick={handleOut}>Logout</button>
+ <button onClick={handleOut} className="logout-btn">Logout</button>
       </div>
       </div>
       </div>
